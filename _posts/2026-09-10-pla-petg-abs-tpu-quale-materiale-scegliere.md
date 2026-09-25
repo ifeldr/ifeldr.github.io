@@ -1,6 +1,8 @@
 ---
 title: "PLA, PETG, ABS o TPU: quale materiale scegliere"
 description: "Le differenze pratiche tra i filamenti più usati nella stampa 3D e come scegliere quello giusto per il tuo pezzo."
+categories: [Materiali]
+tags: [pla, petg, abs, asa, tpu, materiali]
 ---
 La scelta del materiale conta quanto il modello. Lo stesso pezzo stampato in PLA o in PETG può durare anni o rompersi alla prima estate in macchina. Ecco come orientarsi tra i filamenti più comuni.
 

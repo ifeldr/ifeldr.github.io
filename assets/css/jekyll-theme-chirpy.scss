@@ -1,0 +1,70 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ===== Stili aggiuntivi del sito ===== */
+
+/* Presentazione in home */
+.intro-home {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 1rem;
+  padding: 1.75rem;
+  border-radius: 0.75rem;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+.intro-home-testo { flex: 1; min-width: 0; }
+.intro-home h1 { font-size: 1.9rem; margin: 0 0 .75rem; }
+.intro-home p { color: var(--text-muted-color); margin-bottom: 1.25rem; }
+.intro-home-azioni { display: flex; flex-wrap: wrap; gap: .75rem; }
+.intro-home-figura { width: 150px; height: 150px; flex: none; }
+.intro-home-titolo { font-size: 1.25rem; margin: 2rem 0 1rem; }
+@media (max-width: 575px) {
+  .intro-home { flex-direction: column-reverse; align-items: flex-start; padding: 1.25rem; }
+  .intro-home-figura { width: 96px; height: 96px; }
+}
+
+/* Domande frequenti del simulatore */
+details.faq { border-bottom: 1px solid var(--main-border-color); padding: .75rem 0; }
+details.faq summary { cursor: pointer; font-weight: 600; }
+details.faq p { margin: .75rem 0 .25rem; }
+
+/* Simulatore: carattere e colori del tema
+   (il prefisso "html" serve a prevalere sugli stili del simulatore, caricati dopo) */
+html #c3d-calc { font-family: inherit; margin: 1.5rem 0 2.5rem; --c3d-accent: #0d6efd; --c3d-accent-hover: #0b5ed7; }
+html #c3d-calc .c3d-drop-title, html #c3d-calc .c3d-dims, html #c3d-calc .c3d-title, html #c3d-calc .c3d-total-value { font-family: inherit; }
+html #c3d-calc h3.c3d-title { margin-top: 0; }
+html #c3d-calc dt { font-weight: 400; }
+
+/* Simulatore in modalità scura (segue il pulsante chiaro/scuro del tema) */
+@mixin c3d-scuro {
+  #c3d-calc#c3d-calc {
+    --c3d-ink: #d3d6db;
+    --c3d-muted: #9aa2ad;
+    --c3d-line: #3a3f47;
+    --c3d-soft: #262a31;
+    --c3d-surface: #1f2226;
+    --c3d-accent: #3d8bfd;
+    --c3d-accent-hover: #6ea8fe;
+  }
+  #c3d-calc select, #c3d-calc input[type=number], #c3d-calc .c3d-seg label { background: #181b1f; color: var(--c3d-ink); }
+  #c3d-calc .c3d-result { border-top-color: var(--c3d-line); }
+  #c3d-calc .c3d-msg.is-warn, #c3d-calc .c3d-file-warn { color: #e0b44a; }
+  #c3d-calc .c3d-cta:disabled { background: #3a3f47; color: #9aa2ad; }
+}
+html[data-mode='dark'] { @include c3d-scuro; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) { @include c3d-scuro; }
+}

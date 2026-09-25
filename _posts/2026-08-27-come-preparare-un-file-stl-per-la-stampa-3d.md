@@ -1,6 +1,8 @@
 ---
 title: "Come preparare un file STL per la stampa 3D"
 description: "Unità di misura, mesh chiusa, spessori minimi e tolleranze: i controlli da fare prima di inviare un file da stampare."
+categories: [Guide]
+tags: [stl, modellazione, tolleranze]
 ---
 Un buon file fa risparmiare tempo a tutti: niente modifiche dell'ultimo minuto e un preventivo più preciso fin da subito. Questi sono i controlli che conviene fare prima di inviarlo.
 
