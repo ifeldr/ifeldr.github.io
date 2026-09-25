@@ -1,55 +1,157 @@
 # ===============================================================
-#  Impostazioni del sito. Dopo una modifica a questo file,
-#  in locale serve riavviare "bundle exec jekyll serve".
+#  Impostazioni del sito (tema Chirpy 7.6)
+#  Dopo una modifica, GitHub ricostruisce il sito in un paio di minuti.
+#  Guida completa del tema: https://chirpy.cotes.page
 # ===============================================================
 
-title: "Il tuo nome · Stampa 3D"
-description: "Stampa 3D su misura: carica il tuo file STL e scopri subito quanto costa stamparlo."
-lang: it
+theme: jekyll-theme-chirpy
 
-# Indirizzo del sito.
-#  - Sito utente (tuonome.github.io):      url: "https://tuonome.github.io"  baseurl: ""
-#  - Sito di progetto (tuonome.github.io/repo): url: "https://tuonome.github.io"  baseurl: "/repo"
-#  - Dominio personalizzato:              url: "https://www.tuodominio.it"   baseurl: ""
+lang: it-IT
+timezone: Europe/Rome
+
+# Nome e sottotitolo mostrati nella barra laterale
+title: Lorenzo Garbi
+tagline: Stampa 3D su misura, dal tuo file al pezzo finito
+description: >-
+  Stampa 3D su misura: carica il tuo file STL, scopri subito quanto costa
+  stamparlo e leggi guide pratiche su materiali e preparazione dei file.
+
+# Indirizzo del sito, senza barra finale.
+#  - Repository tuonome.github.io:  url: "https://tuonome.github.io"   baseurl: ""
+#  - Altro nome, es. stampa3d:     url: "https://tuonome.github.io"   baseurl: "/stampa3d"
+#  - Dominio personalizzato:       url: "https://www.tuodominio.it"   baseurl: ""
 url: "https://ifeldr.github.io"
 baseurl: ""
 
-author:
-  name: "Lorenzo Garbi"
-  ruolo: "Maker e progettista 3D"
-  foto: ""          # es. /assets/img/foto.jpg (quadrata, almeno 600 × 600 px). Vuoto = iniziali.
+# Immagine rotonda in cima alla barra laterale (quadrata, almeno 200 × 200 px)
+avatar: /assets/img/avatar.svg
 
-# Link social: lascia vuoto quello che non usi
 social:
-  instagram: ""     # es. https://www.instagram.com/tuonome
-  facebook: ""
-  youtube: ""
-  printables: ""    # es. https://www.printables.com/@tuonome
-  linkedin: ""
+  name: Lorenzo Garbi                 # autore degli articoli
+  email: l0r3nz0g4rb1@gmail.com      # usata per l'icona email nella barra laterale
+  links:
+    # Il primo link è quello su cui si clicca dal tuo nome, sotto gli articoli e nel piè di pagina.
+    # Metti il tuo profilo principale (per esempio Instagram); se non ne hai uno,
+    # lascia l'indirizzo del sito, lo stesso di "url" qui sopra.
+    - https://ifeldr.github.io
 
-# L'email di contatto è quella dei preventivi, in _data/calcolatore_3d.yml
+github:
+  username: ifeldr         # facoltativo: il tuo nome utente GitHub
+twitter:
+  username:          # facoltativo
 
-permalink: /blog/:year/:month/:title/
-timezone: Europe/Rome
-markdown: kramdown
+# Tema chiaro/scuro: vuoto = segue le impostazioni del dispositivo (con pulsante per cambiarlo)
+theme_mode:
+
+# Immagine di anteprima quando il sito viene condiviso sui social (facoltativa)
+social_preview_image:
+
+# Indice dei contenuti a destra negli articoli
+toc: true
+
+# Commenti agli articoli (facoltativi): vedi la guida di Chirpy per giscus o utterances
+comments:
+  provider:
+
+# Statistiche (facoltative)
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+
+pageviews:
+  provider:
+
+webmaster_verifications:
+  google:
+
+cdn:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+actions:
+  edit_post:
+    enabled: false
+    url: ""
+    static_url: false
+
+paginate: 10
+
 kramdown:
-  input: GFM
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-feed:
-  path: blog/feed.xml
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 defaults:
-  - scope: { path: "", type: posts }
-    values: { layout: post }
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
 exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
   - LEGGIMI.md
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - .bundle
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

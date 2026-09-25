@@ -1,6 +1,8 @@
 ---
 title: "Riempimento e pareti: cosa conta davvero per la robustezza"
 description: "Perché il riempimento al 100% raramente serve, e come pareti e orientamento incidono sulla resistenza di un pezzo stampato in 3D."
+categories: [Impostazioni di stampa]
+tags: [riempimento, pareti, robustezza]
 ---
 Quando un pezzo deve essere robusto, l'istinto è chiedere il riempimento al 100%. Quasi sempre non è la scelta migliore: costa di più, richiede molto più tempo e spesso non rende il pezzo tanto più forte quanto ci si aspetta.
 
