@@ -1,0 +1,113 @@
+---
+layout: default
+title: Stampa 3D su misura
+classe_body: home
+---
+{%- assign dati = site.data.calcolatore_3d -%}
+<section class="eroe">
+  <div class="contenitore eroe-griglia">
+    <div class="eroe-testo">
+      <p class="occhiello occhiello-caldo">Stampa 3D su misura</p>
+      <h1>Dal tuo file STL al pezzo finito.</h1>
+      <p class="eroe-sottotitolo">Prototipi, ricambi e oggetti unici, stampati uno strato alla volta. Carica il modello e scopri subito quanto costa, senza aspettare un preventivo.</p>
+      <div class="eroe-azioni">
+        <a class="bottone bottone-caldo" href="{{ '/simulatore-3d/' | relative_url }}">Calcola il prezzo</a>
+        <a class="bottone bottone-vuoto" href="{{ '/chi-sono/' | relative_url }}">Chi sono</a>
+      </div>
+    </div>
+    <div class="eroe-figura" aria-hidden="true">
+      <svg viewBox="0 0 400 400" class="pezzo">
+        <defs>
+          <clipPath id="sagoma"><path d="M200 40 340 120v160L200 360 60 280V120z"/></clipPath>
+          <pattern id="strati" width="400" height="9" patternUnits="userSpaceOnUse"><rect width="400" height="4.5" fill="currentColor" opacity=".16"/></pattern>
+        </defs>
+        <g clip-path="url(#sagoma)">
+          <path d="M200 40 340 120 200 200 60 120z" fill="#F4B400" opacity=".95"/>
+          <path d="M60 120 200 200v160L60 280z" fill="#C98F00"/>
+          <path d="M340 120 200 200v160l140-80z" fill="#A87700"/>
+          <rect class="strati-anim" x="0" y="0" width="400" height="400" fill="url(#strati)"/>
+        </g>
+        <g fill="none" stroke="#F4B400" stroke-width="2" opacity=".5">
+          <path d="M200 20v14M200 366v14M40 120h12M348 120h12"/>
+        </g>
+        <g class="ugello">
+          <path d="M186 0h28v20l-8 12h-12l-8-12z" fill="#E9ECF1"/>
+          <circle cx="200" cy="38" r="3" fill="#F4B400"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sezione">
+  <div class="contenitore">
+    <p class="occhiello">Come funziona</p>
+    <h2 class="sezione-titolo">Tre passaggi, nessuna attesa.</h2>
+    <ol class="passi">
+      <li>
+        <span class="passo-num">01</span>
+        <h3>Carica i file STL</h3>
+        <p>Trascinali nel simulatore, anche più di uno insieme. Restano sul tuo computer: l'analisi avviene nel browser.</p>
+      </li>
+      <li>
+        <span class="passo-num">02</span>
+        <h3>Scegli come stamparli</h3>
+        <p>Materiale, qualità, riempimento e supporti, file per file. Il prezzo si aggiorna mentre cambi le opzioni.</p>
+      </li>
+      <li>
+        <span class="passo-num">03</span>
+        <h3>Richiedi il preventivo</h3>
+        <p>Un clic prepara l'email con tutti i dettagli. Controllo i modelli e ti confermo prezzo e tempi di consegna.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+{%- if dati.materiali %}
+<section class="sezione sezione-scura">
+  <div class="contenitore">
+    <p class="occhiello occhiello-caldo">Materiali</p>
+    <h2 class="sezione-titolo">Il materiale giusto per ogni pezzo.</h2>
+    <ul class="materiali">
+      {%- for m in dati.materiali %}
+      <li>
+        <span class="materiale-campione" style="background:{{ m.colore | default: '#E9E4DA' }}"></span>
+        <h3>{{ m.nome }}</h3>
+        {%- if m.descrizione %}<p>{{ m.descrizione }}</p>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="sezione-link"><a href="{{ '/blog/' | relative_url }}">Non sai quale scegliere? Leggi le guide nel blog</a></p>
+  </div>
+</section>
+{%- endif %}
+
+{%- if site.posts.size > 0 %}
+<section class="sezione">
+  <div class="contenitore">
+    <div class="sezione-riga">
+      <div>
+        <p class="occhiello">Dal blog</p>
+        <h2 class="sezione-titolo">Guide e consigli.</h2>
+      </div>
+      <a class="bottone bottone-vuoto-scuro" href="{{ '/blog/' | relative_url }}">Tutti gli articoli</a>
+    </div>
+    <ul class="schede">
+      {%- for post in site.posts limit: 3 %}
+      <li class="scheda">
+        <p class="scheda-meta">{% include data-it.html data=post.date %}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 30, "…" }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+
+<section class="fascia-cta">
+  <div class="contenitore fascia-cta-riga">
+    <h2>Quanto costa stampare il tuo file?</h2>
+    <a class="bottone bottone-caldo" href="{{ '/simulatore-3d/' | relative_url }}">Scoprilo in pochi secondi</a>
+  </div>
+</section>
