@@ -11,11 +11,11 @@ lang: it
 #  - Sito utente (tuonome.github.io):      url: "https://tuonome.github.io"  baseurl: ""
 #  - Sito di progetto (tuonome.github.io/repo): url: "https://tuonome.github.io"  baseurl: "/repo"
 #  - Dominio personalizzato:              url: "https://www.tuodominio.it"   baseurl: ""
-url: ""
+url: "https://ifeldr.github.io"
 baseurl: ""
 
 author:
-  name: "Il tuo nome"
+  name: "Lorenzo Garbi"
   ruolo: "Maker e progettista 3D"
   foto: ""          # es. /assets/img/foto.jpg (quadrata, almeno 600 × 600 px). Vuoto = iniziali.
 
