@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+description: "Guide e consigli sulla stampa 3D: materiali, preparazione dei file, impostazioni."
+---
+<header class="pagina-testa">
+  <div class="contenitore">
+    <p class="occhiello">Blog</p>
+    <h1>Guide e consigli sulla stampa 3D.</h1>
+    <p class="pagina-sottotitolo">Materiali, preparazione dei file e impostazioni di stampa, spiegati in modo pratico.</p>
+  </div>
+</header>
+<div class="contenitore pagina-corpo">
+  {%- if site.posts.size > 0 %}
+  <ul class="elenco-articoli">
+    {%- for post in site.posts %}
+    <li>
+      <p class="scheda-meta">{% include data-it.html data=post.date %} · {% include lettura.html testo=post.content %}</p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 45, "…" }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p>Nessun articolo per ora.</p>
+  {%- endif %}
+</div>

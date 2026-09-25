@@ -1,0 +1,22 @@
+<header class="testata">
+  <div class="contenitore testata-riga">
+    <a class="marchio" href="{{ '/' | relative_url }}">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><path d="M32 8 54 20v24L32 56 10 44V20z"/><path d="M10 20l22 12 22-12M32 32v24"/></g></svg>
+      <span>{{ site.author.name }}</span>
+    </a>
+    <button class="menu-apri" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Menu principale">
+      <ul>
+        {%- for voce in site.data.navigazione %}
+          {%- assign attiva = false -%}
+          {%- if voce.url == "/" -%}
+            {%- if page.url == "/" -%}{%- assign attiva = true -%}{%- endif -%}
+          {%- elsif page.url contains voce.url -%}
+            {%- assign attiva = true -%}
+          {%- endif %}
+        <li><a href="{{ voce.url | relative_url }}" class="{% if voce.evidenza %}menu-cta{% endif %}"{% if attiva %} aria-current="page"{% endif %}>{{ voce.titolo }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

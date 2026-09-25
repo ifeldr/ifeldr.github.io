@@ -1,0 +1,10 @@
+# Voci del menu, in ordine. "evidenza: true" mostra la voce come pulsante.
+- titolo: Home
+  url: /
+- titolo: Chi sono
+  url: /chi-sono/
+- titolo: Blog
+  url: /blog/
+- titolo: Simulatore 3D
+  url: /simulatore-3d/
+  evidenza: true
