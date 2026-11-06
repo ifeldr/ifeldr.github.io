@@ -24,7 +24,7 @@ L'ABS sopporta temperature più alte e si può carteggiare, forare e incollare c
 
 L'ASA ha caratteristiche simili ma in più resiste ai raggi UV: non ingiallisce e non diventa fragile al sole. Per un pezzo che starà all'esterno tutto l'anno è la scelta più sicura.
 
-Entrambi richiedono una stampante chiusa e più attenzione in stampa, e questo si riflette in parte sul prezzo.
+Entrambi richiedono una stampante chiusa e più attenzione in stampa, e questo si riflette in parte sul costo.
 
 ## TPU: quando il pezzo deve essere morbido
 
@@ -38,4 +38,4 @@ Il TPU è un materiale flessibile, simile alla gomma. Si usa per guarnizioni, pa
 - **Pezzo che sta all'aperto** → ASA
 - **Pezzo morbido o elastico** → TPU
 
-Nel [simulatore]({{ site.simulatore_url }}) puoi assegnare un materiale diverso a ogni file e vedere subito come cambiano peso, tempo e prezzo.
+Nel [simulatore]({{ site.simulatore_url }}) puoi assegnare un materiale diverso a ogni file e vedere subito come cambiano peso, tempo e costo.
