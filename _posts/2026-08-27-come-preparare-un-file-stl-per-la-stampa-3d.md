@@ -10,7 +10,7 @@ Un buon file fa risparmiare tempo a tutti: niente modifiche dell'ultimo minuto e
 
 Il formato STL contiene solo la forma, non l'unità di misura. Chi lo apre di solito lo interpreta in millimetri: un pezzo disegnato in pollici o in centimetri arriverà quindi 25,4 o 10 volte più piccolo.
 
-Prima di esportare controlla che il programma di modellazione lavori in millimetri. Se non sei sicuro, carica il file nel [simulatore]({{ '/simulatore-3d/' | relative_url }}): mostra subito le dimensioni del modello e ti permette di cambiare unità.
+Prima di esportare controlla che il programma di modellazione lavori in millimetri. Se non sei sicuro, carica il file nel [simulatore]({{ site.simulatore_url }}): mostra subito le dimensioni del modello e ti permette di cambiare unità.
 
 ## La mesh deve essere chiusa
 

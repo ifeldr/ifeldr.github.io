@@ -27,7 +27,7 @@ Il riempimento è importante soprattutto quando il pezzo viene schiacciato, o qu
 
 Il riempimento influisce su materiale e tempo di stampa, e quindi sul prezzo. Su un pezzo piccolo la differenza tra 20% e 50% è modesta, perché il guscio pesa già molto. Su un pezzo grande e massiccio può raddoppiare il costo.
 
-Il modo più rapido per capirlo è provare: nel [simulatore]({{ '/simulatore-3d/' | relative_url }}) puoi cambiare il riempimento di ogni file e vedere come variano peso, tempo e prezzo.
+Il modo più rapido per capirlo è provare: nel [simulatore]({{ site.simulatore_url }}) puoi cambiare il riempimento di ogni file e vedere come variano peso, tempo e prezzo.
 
 ## L'orientamento conta quanto il riempimento
 

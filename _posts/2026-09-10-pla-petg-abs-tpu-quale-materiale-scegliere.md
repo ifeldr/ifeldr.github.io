@@ -38,4 +38,4 @@ Il TPU è un materiale flessibile, simile alla gomma. Si usa per guarnizioni, pa
 - **Pezzo che sta all'aperto** → ASA
 - **Pezzo morbido o elastico** → TPU
 
-Nel [simulatore]({{ '/simulatore-3d/' | relative_url }}) puoi assegnare un materiale diverso a ogni file e vedere subito come cambiano peso, tempo e prezzo.
+Nel [simulatore]({{ site.simulatore_url }}) puoi assegnare un materiale diverso a ogni file e vedere subito come cambiano peso, tempo e prezzo.

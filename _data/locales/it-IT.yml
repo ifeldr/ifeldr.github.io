@@ -13,7 +13,7 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
-  simulatore-3d: Simulatore 3D
+  simulatore: Simulatore 3D
   chi-sono: Chi sono
   categories: Categorie
   tags: Tags

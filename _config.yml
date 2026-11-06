@@ -18,6 +18,10 @@ description: >-
 
 # Indirizzo del sito, senza barra finale.
 #  - Repository tuonome.github.io:  url: "https://tuonome.github.io"   baseurl: ""
+
+# Indirizzo del simulatore del prezzo, pubblicato dal repository separato "simulatore-3d".
+# Lo usano il menu, la home, la pagina "Chi sono" e gli articoli.
+simulatore_url: "https://ifeldr.github.io/simulatore-3d/"
 #  - Altro nome, es. stampa3d:     url: "https://tuonome.github.io"   baseurl: "/stampa3d"
 #  - Dominio personalizzato:       url: "https://www.tuodominio.it"   baseurl: ""
 url: "https://ifeldr.github.io"
