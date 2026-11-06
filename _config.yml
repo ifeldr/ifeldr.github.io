@@ -11,15 +11,15 @@ timezone: Europe/Rome
 
 # Nome e sottotitolo mostrati nella barra laterale
 title: Lorenzo Garbi
-tagline: Stampa 3D su misura, dal tuo file al pezzo finito
+tagline: Appunti, progetti e guide di stampa 3D
 description: >-
-  Stampa 3D su misura: carica il tuo file STL, scopri subito quanto costa
-  stamparlo e leggi guide pratiche su materiali e preparazione dei file.
+  Il mio laboratorio di stampa 3D: progetti, guide pratiche su materiali e
+  preparazione dei file, e un simulatore per calcolare il costo di una stampa.
 
 # Indirizzo del sito, senza barra finale.
 #  - Repository tuonome.github.io:  url: "https://tuonome.github.io"   baseurl: ""
 
-# Indirizzo del simulatore del prezzo, pubblicato dal repository separato "simulatore-3d".
+# Indirizzo del simulatore dei costi, pubblicato dal repository separato "simulatore-3d".
 # Lo usano il menu, la home, la pagina "Chi sono" e gli articoli.
 simulatore_url: "https://ifeldr.github.io/simulatore-3d/"
 #  - Altro nome, es. stampa3d:     url: "https://tuonome.github.io"   baseurl: "/stampa3d"

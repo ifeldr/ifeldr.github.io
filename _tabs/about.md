@@ -5,36 +5,29 @@ order: 5
 permalink: /chi-sono/
 ---
 
-<!-- Sostituisci i testi qui sotto con la tua storia. Si scrive in Markdown. -->
+<!-- Sostituisci i testi segnaposto qui sotto con i tuoi. Si scrive in Markdown. -->
 
-Ciao, sono **{{ site.social.name }}**. Trasformo idee, disegni e file 3D in oggetti reali, uno strato alla volta.
+Ciao, sono **{{ site.social.name }}**. Qui raccolgo i miei progetti di stampa 3D, le prove che faccio e quello che imparo strada facendo.
 
-## La mia storia
+## Come ho iniziato
 
-Racconta qui come ti sei avvicinato alla stampa 3D: la prima stampante, il primo pezzo che ti ha dato soddisfazione, cosa ti ha spinto a farne un lavoro o una passione seria.
+Racconta qui come ti sei avvicinato alla stampa 3D: la prima stampante, il primo pezzo riuscito (e il primo fallito), cosa ti piace stampare.
 
-Due o tre paragrafi bastano. Chi arriva qui vuole capire se può fidarsi di te: parla di esperienza concreta più che di aggettivi.
+## Cosa stampo
 
-## Cosa faccio
+- **Pezzi utili per casa**: supporti, ganci, clip, ricambi che non si trovano più.
+- **Progetti personali**: modellini, oggetti d'arredo, regali.
+- **Prove e test**: materiali, impostazioni e trucchi da annotare per la volta successiva.
 
-- **Prototipi** per verificare forme e ingombri prima della produzione.
-- **Ricambi e pezzi funzionali**: supporti, staffe, clip, componenti fuori produzione.
-- **Oggetti su misura**: regali, targhe, modellini, complementi d'arredo.
-- **Modellazione 3D**: se hai solo un'idea o un disegno, posso preparare io il file.
+## Materiali che uso
 
-## Come lavoro
+- **PLA**: facile, preciso e con finitura pulita. Ideale per prototipi, modellini e oggetti d'arredo.
+- **PETG**: più resistente e un po' flessibile, sopporta meglio umidità e calore. Adatto a pezzi funzionali.
+- **ABS**: robusto e lavorabile dopo la stampa, regge temperature più alte del PLA.
+- **ASA**: simile all'ABS ma resiste ai raggi UV, per i pezzi che stanno all'aperto.
+- **TPU**: gommoso ed elastico, per guarnizioni, protezioni e piedini antiscivolo.
 
-Ogni file viene controllato prima della stampa: se c'è un problema di geometria, di pareti troppo sottili o di orientamento, te lo segnalo e ti propongo una soluzione. Il prezzo che vedi nel [simulatore]({{ site.simulatore_url }}) è una stima; quello definitivo te lo confermo prima di iniziare, insieme ai tempi di consegna.
-
-## Materiali disponibili
-
-- **PLA**: Facile, preciso e con finitura pulita. Ideale per prototipi, modellini e oggetti d'arredo.
-- **PETG**: Più resistente e un po' flessibile, sopporta meglio umidità e calore. Adatto a pezzi funzionali.
-- **ABS**: Robusto e lavorabile dopo la stampa, regge temperature più alte del PLA.
-- **ASA (per esterni)**: Simile all'ABS ma resiste ai raggi UV: la scelta giusta per i pezzi che stanno all'aperto.
-- **TPU (flessibile)**: Gommoso ed elastico: guarnizioni, protezioni, piedini antiscivolo.
-
-Prezzi e disponibilità aggiornati nel [simulatore]({{ site.simulatore_url }}).
+Per sapere quanto costa stampare un pezzo con ciascuno di questi materiali c'è il [simulatore]({{ site.simulatore_url }}).
 
 ## La mia attrezzatura
 
@@ -43,5 +36,5 @@ Prezzi e disponibilità aggiornati nel [simulatore]({{ site.simulatore_url }}).
 
 ## Contatti
 
-Scrivimi a [{{ site.social.email }}](mailto:{{ site.social.email }}) per richieste particolari, oppure calcola subito il prezzo del tuo file nel [simulatore]({{ site.simulatore_url }}).
+Hai una domanda su un articolo o un'idea da condividere? Scrivimi a [{{ site.social.email }}](mailto:{{ site.social.email }}).
 {: .prompt-tip }

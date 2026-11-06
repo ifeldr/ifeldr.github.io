@@ -4,7 +4,7 @@ description: "Perché il riempimento al 100% raramente serve, e come pareti e or
 categories: [Impostazioni di stampa]
 tags: [riempimento, pareti, robustezza]
 ---
-Quando un pezzo deve essere robusto, l'istinto è chiedere il riempimento al 100%. Quasi sempre non è la scelta migliore: costa di più, richiede molto più tempo e spesso non rende il pezzo tanto più forte quanto ci si aspetta.
+Quando un pezzo deve essere robusto, l'istinto è impostare il riempimento al 100%. Quasi sempre non è la scelta migliore: costa di più, richiede molto più tempo e spesso non rende il pezzo tanto più forte quanto ci si aspetta.
 
 ## Come è fatto un pezzo stampato
 
@@ -23,12 +23,12 @@ Il riempimento è importante soprattutto quando il pezzo viene schiacciato, o qu
 - **40–60%**: pezzi funzionali sotto sforzo, staffe, supporti
 - **80–100%**: casi particolari, come pezzi piccoli che devono essere pesanti o reggere compressione
 
-## Quanto pesa sul prezzo
+## Quanto pesa sul costo
 
-Il riempimento influisce su materiale e tempo di stampa, e quindi sul prezzo. Su un pezzo piccolo la differenza tra 20% e 50% è modesta, perché il guscio pesa già molto. Su un pezzo grande e massiccio può raddoppiare il costo.
+Il riempimento influisce su materiale e tempo di stampa, e quindi sul costo. Su un pezzo piccolo la differenza tra 20% e 50% è modesta, perché il guscio pesa già molto. Su un pezzo grande e massiccio può raddoppiare il costo.
 
-Il modo più rapido per capirlo è provare: nel [simulatore]({{ site.simulatore_url }}) puoi cambiare il riempimento di ogni file e vedere come variano peso, tempo e prezzo.
+Il modo più rapido per capirlo è provare: nel [simulatore]({{ site.simulatore_url }}) puoi cambiare il riempimento di ogni file e vedere come variano peso, tempo e costo.
 
 ## L'orientamento conta quanto il riempimento
 
-Gli strati aderiscono bene tra loro, ma il punto più debole di un pezzo stampato resta sempre il legame tra uno strato e l'altro. Una staffa orientata male si rompe lungo gli strati anche al 100% di riempimento. Per questo, per i pezzi funzionali, è utile spiegare nella richiesta come verranno usati: l'orientamento giusto si sceglie in base a dove arriva lo sforzo.
+Gli strati aderiscono bene tra loro, ma il punto più debole di un pezzo stampato resta sempre il legame tra uno strato e l'altro. Una staffa orientata male si rompe lungo gli strati anche al 100% di riempimento. Per questo, nei pezzi funzionali, conviene pensare prima a come verranno usati: l'orientamento giusto si sceglie in base a dove arriva lo sforzo.
