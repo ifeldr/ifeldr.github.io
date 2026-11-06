@@ -24,13 +24,17 @@ Due o tre paragrafi bastano. Chi arriva qui vuole capire se può fidarsi di te: 
 
 ## Come lavoro
 
-Ogni file viene controllato prima della stampa: se c'è un problema di geometria, di pareti troppo sottili o di orientamento, te lo segnalo e ti propongo una soluzione. Il prezzo che vedi nel [simulatore]({{ '/simulatore-3d/' | relative_url }}) è una stima; quello definitivo te lo confermo prima di iniziare, insieme ai tempi di consegna.
+Ogni file viene controllato prima della stampa: se c'è un problema di geometria, di pareti troppo sottili o di orientamento, te lo segnalo e ti propongo una soluzione. Il prezzo che vedi nel [simulatore]({{ site.simulatore_url }}) è una stima; quello definitivo te lo confermo prima di iniziare, insieme ai tempi di consegna.
 
 ## Materiali disponibili
 
-{% for m in site.data.calcolatore_3d.materiali -%}
-- **{{ m.nome }}**{% if m.descrizione %}: {{ m.descrizione }}{% endif %}
-{% endfor %}
+- **PLA**: Facile, preciso e con finitura pulita. Ideale per prototipi, modellini e oggetti d'arredo.
+- **PETG**: Più resistente e un po' flessibile, sopporta meglio umidità e calore. Adatto a pezzi funzionali.
+- **ABS**: Robusto e lavorabile dopo la stampa, regge temperature più alte del PLA.
+- **ASA (per esterni)**: Simile all'ABS ma resiste ai raggi UV: la scelta giusta per i pezzi che stanno all'aperto.
+- **TPU (flessibile)**: Gommoso ed elastico: guarnizioni, protezioni, piedini antiscivolo.
+
+Prezzi e disponibilità aggiornati nel [simulatore]({{ site.simulatore_url }}).
 
 ## La mia attrezzatura
 
@@ -39,5 +43,5 @@ Ogni file viene controllato prima della stampa: se c'è un problema di geometria
 
 ## Contatti
 
-Scrivimi a [{{ site.data.calcolatore_3d.email_preventivi }}](mailto:{{ site.data.calcolatore_3d.email_preventivi }}) per richieste particolari, oppure calcola subito il prezzo del tuo file nel [simulatore]({{ '/simulatore-3d/' | relative_url }}).
+Scrivimi a [{{ site.social.email }}](mailto:{{ site.social.email }}) per richieste particolari, oppure calcola subito il prezzo del tuo file nel [simulatore]({{ site.simulatore_url }}).
 {: .prompt-tip }
