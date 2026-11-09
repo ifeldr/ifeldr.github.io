@@ -21,9 +21,9 @@
 #   icon: "fab fa-facebook"
 #   url: "https://www.facebook.com/tuonome"
 
-# - type: linkedin
-#   icon: "fab fa-linkedin"
-#   url: "https://www.linkedin.com/in/tuonome"
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/lorenzogarbi/"
 
 # - type: printables
 #   icon: "fas fa-cube"
