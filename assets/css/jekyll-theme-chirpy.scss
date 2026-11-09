@@ -35,3 +35,22 @@
   .intro-home { flex-direction: column-reverse; align-items: flex-start; padding: 1.25rem; }
   .intro-home-figura { width: 96px; height: 96px; }
 }
+
+/* Riquadro "Offrimi un caffè" in fondo agli articoli */
+.caffe {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0 1.5rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: 0.75rem;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+.caffe-icona { font-size: 1.6rem; color: #c98f00; flex: none; }
+.caffe-testo { margin: 0; flex: 1; }
+.caffe-bottone { flex: none; white-space: nowrap; }
+@media (max-width: 575px) {
+  .caffe { flex-wrap: wrap; }
+  .caffe-bottone { width: 100%; }
+}

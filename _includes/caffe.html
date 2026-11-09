@@ -1,0 +1,8 @@
+{%- comment -%} Riquadro "Offrimi un caffè" in fondo agli articoli. Link in _config.yml (caffe_url). {%- endcomment -%}
+{%- if site.caffe_url and site.caffe_url != "" -%}
+<aside class="caffe" aria-label="Offrimi un caffè">
+  <i class="fas fa-mug-hot caffe-icona" aria-hidden="true"></i>
+  <p class="caffe-testo"><strong>Ti è stato utile?</strong> Se ti va, offrimi un caffè: mi aiuta a continuare a scrivere guide e a sviluppare il simulatore.</p>
+  <a class="btn btn-primary caffe-bottone" href="{{ site.caffe_url }}" target="_blank" rel="noopener">Offrimi un caffè</a>
+</aside>
+{%- endif -%}

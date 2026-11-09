@@ -25,6 +25,11 @@
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/lorenzogarbi/"
 
+# Offrimi un caffè (PayPal.me): stesso link di caffe_url in _config.yml
+- type: offrimi un caffè
+  icon: "fas fa-mug-hot"
+  url: "https://www.paypal.me/lorenzogarbi/1EUR"
+
 # - type: printables
 #   icon: "fas fa-cube"
 #   url: "https://www.printables.com/@tuonome"

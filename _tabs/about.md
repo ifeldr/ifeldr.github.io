@@ -49,4 +49,5 @@ Lingue: italiano e inglese.
 ## Contatti
 
 Hai una domanda su un articolo o un'idea da condividere? Scrivimi a [{{ site.social.email }}](mailto:{{ site.social.email }}) oppure trovami su [LinkedIn](https://www.linkedin.com/in/lorenzogarbi/).
+Se le guide o il simulatore ti sono stati utili, puoi [offrirmi un caffè]({{ site.caffe_url }}){:target="_blank" rel="noopener"} ☕
 {: .prompt-tip }
