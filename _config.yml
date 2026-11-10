@@ -21,7 +21,7 @@ description: >-
 
 # Indirizzo del simulatore dei costi, pubblicato dal repository separato "simulatore-3d".
 # Lo usano il menu, la home, la pagina "Chi sono" e gli articoli.
-simulatore_url: "https://ifeldr.github.io/simulatore-3d/"
+simulatore_url: "https://ifeldr.github.io/simulatore-3d/it/"
 
 # Link "Offrimi un caffè" (PayPal.me). L'importo finale (1EUR) è quello proposto: chi dona può cambiarlo.
 # Lascia vuoto per togliere il caffè da tutto il sito.
