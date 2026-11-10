@@ -35,3 +35,13 @@ Se non sei sicuro dell'orientamento migliore, prova due varianti nello slicer e 
 ## Esporta con una risoluzione sensata
 
 Curve troppo sfaccettate si vedranno sul pezzo; al contrario, milioni di triangoli rendono il file pesante senza migliorare la stampa. Nella maggior parte dei programmi le impostazioni "alta" o "fine" dell'esportazione STL vanno benissimo.
+
+## STL, 3MF o G-code?
+
+Lo STL è il formato più diffuso, ma non è l'unico che puoi mandare in stampa:
+
+- lo **STL** contiene solo la forma del pezzo, senza unità di misura né colori;
+- il **3MF** è un archivio più completo: salva l'unità di misura, più oggetti con la loro posizione sul piatto e, nei progetti di Bambu Studio, OrcaSlicer o PrusaSlicer, anche stampante e materiale. Se il tuo programma lo esporta, è la scelta più sicura;
+- il **G-code** è il risultato dello slicer: le istruzioni per una stampante precisa, con tempo e filamento già calcolati. Non si modifica più, ma dice esattamente quanto durerà la stampa.
+
+Nel [simulatore]({{ site.simulatore_url }}) puoi caricare tutti e tre. Con STL e 3MF il costo è una stima calcolata dalla geometria; con il G-code (o il 3MF già processato dallo slicer) tempo e grammi sono quelli reali.
