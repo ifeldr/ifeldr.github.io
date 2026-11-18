@@ -10,6 +10,8 @@ Quando una stampa dura ore, viene voglia di controllarla spesso: a che punto è,
 
 Il punto a cui tenevo di più: BambuGo si collega **solo alla stampante nella tua rete locale**. Nessun account, nessun cloud, nessun dato che esce da casa.
 
+{% include embed/video.html src='/assets/video/bambugo-presentazione.mp4' poster='/assets/img/posts/bambugo-video-poster.jpg' title='BambuGo in 30 secondi' muted=true %}
+
 ## Cosa mostra
 
 Nella barra compare una piccola stampante: durante il lavoro l'oggetto sul piatto cresce con l'avanzamento, con accanto percentuale e tempo rimanente (ad esempio `45% · 1h 12m`). Un simbolo segnala pausa, fine stampa o errori.
