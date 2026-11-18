@@ -10,6 +10,8 @@ Il prezzo della bobina è solo una parte del costo di una stampa 3D. Ci sono l'e
 
 Tutto avviene nel browser: i file che carichi non vengono inviati da nessuna parte.
 
+{% include embed/video.html src='/assets/video/simulatore-3d.mp4' poster='/assets/img/posts/simulatore-3d-poster.jpg' title='Il simulatore in azione' muted=true %}
+
 ## Quali file accetta
 
 - **STL**, binario o ASCII: la stima parte dalla geometria del modello, con materiale, riempimento, supporti e qualità scelti nella pagina.
