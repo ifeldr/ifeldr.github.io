@@ -2,6 +2,7 @@
 title: Simulatore 3D
 icon: fas fa-cube
 order: 1
+parent: progetti
 permalink: /simulatore/
 description: Carica i tuoi file STL, 3MF o G-code e calcola subito peso, tempo e costo della stampa 3D.
 ---

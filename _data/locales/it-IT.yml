@@ -1,5 +1,5 @@
 # Copia della lingua italiana del tema Chirpy 7.6 con le voci del menu personalizzate
-# (Home, Simulatore 3D, Chi sono).
+# (Home, Progetti con le sottovoci Simulatore 3D e Rack Designer, Chi sono).
 # The layout text of site
 
 # ----- Commons label -----
@@ -13,7 +13,9 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
+  progetti: Progetti
   simulatore: Simulatore 3D
+  rack: Rack Designer
   chi-sono: Chi sono
   categories: Categorie
   tags: Tags
