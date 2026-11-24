@@ -19,12 +19,12 @@
   pulsante: Calcola il costo
   figura: figura-simulatore.html
 
-- titolo: Rack Designer
+- titolo: Network Design Center
   data: 2026-11-24
   icona: fas fa-server
   url: https://ifeldr.github.io/Rack-Designer/
   descrizione: Progetta e verifica gli armadi di rete, genera le etichette e posiziona armadi, prese e access point sulla planimetria.
-  banner_titolo: "Nuovo progetto: Rack Designer"
+  banner_titolo: "Nuovo progetto: Network Design Center"
   banner_testo: "Allestisci gli armadi di rete con oltre 600 modelli di 31 marche, genera le etichette di armadi, pannelli e prese e posiziona armadi, access point e telecamere sulla planimetria. Tutto nel browser, senza installare nulla."
-  pulsante: Apri il Rack Designer
+  pulsante: Apri il Network Design Center
   figura: figura-rack.html
