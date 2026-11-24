@@ -27,6 +27,7 @@
 }
 .intro-home-testo { flex: 1; min-width: 0; }
 .intro-home h1 { font-size: 1.9rem; margin: 0 0 .75rem; }
+.intro-home-etichetta { display: inline-block; font-size: .85rem; font-weight: 600; color: #c98f00; margin-bottom: .4rem; }
 .intro-home p { color: var(--text-muted-color); margin-bottom: 1.25rem; }
 .intro-home-azioni { display: flex; flex-wrap: wrap; gap: .75rem; }
 .intro-home-figura { width: 150px; height: 150px; flex: none; }
@@ -54,18 +55,6 @@
   .caffe { flex-wrap: wrap; }
   .caffe-bottone { width: 100%; }
 }
-
-/* Menu laterale: sottovoci (pagine con "parent:" nel front matter, es. Progetti) */
-#sidebar .nav li.nav-item.nav-parent + li.nav-sub,
-#sidebar .nav li.nav-item.nav-sub + li.nav-sub { margin-top: 0.1rem; }
-#sidebar .nav li.nav-item.nav-sub a.nav-link {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  padding-left: 2.1rem;
-  font-weight: 400;
-  font-size: 0.95rem;
-}
-#sidebar .nav li.nav-item.nav-sub a.nav-link i { font-size: 0.85rem; }
 
 /* Pagina Progetti */
 .progetti {

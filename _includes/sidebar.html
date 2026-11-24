@@ -28,32 +28,21 @@
       <!-- the real tabs -->
       {%- comment -%}
         Personalizzazione del sito: le pagine con "parent: <nome>" nel front matter non compaiono
-        come voci principali ma come sottovoci della pagina indicata (es. Progetti → Simulatore 3D,
-        Rack Designer). Il resto del file è identico a _includes/sidebar.html di Chirpy 7.6.0:
-        se aggiorni il tema, ricopia il file del tema e reinserisci questo blocco.
+        nel menu (es. Simulatore 3D e Rack Designer, raggiungibili dalla pagina Progetti).
+        Il resto del file è identico a _includes/sidebar.html di Chirpy 7.6.0:
+        se aggiorni il tema, ricopia il file del tema e reinserisci il filtro "top_tabs".
       {%- endcomment -%}
       {% assign top_tabs = site.tabs | where_exp: 'item', 'item.parent == nil' %}
       {% for tab in top_tabs %}
-        {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
-        {% assign children = site.tabs | where: 'parent', tab_name %}
-        {% assign child_active = children | where: 'url', page.url | size %}
-        <li class="nav-item{% if tab.url == page.url or child_active > 0 %}{{ " active" }}{% endif %}{% if children.size > 0 %} nav-parent{% endif %}">
+        <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
             <i class="fa-fw {{ tab.icon }}"></i>
+            {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
             <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
           </a>
         </li>
         <!-- .nav-item -->
-        {% for child in children %}
-          {% capture child_name %}{{ child.url | split: '/' }}{% endcapture %}
-          <li class="nav-item nav-sub{% if child.url == page.url %}{{ " active" }}{% endif %}">
-            <a href="{{ child.url | relative_url }}" class="nav-link">
-              <i class="fa-fw {{ child.icon }}"></i>
-              <span>{{ site.data.locales[include.lang].tabs.[child_name] | default: child.title }}</span>
-            </a>
-          </li>
-        {% endfor %}
       {% endfor %}
     </ul>
   </nav>

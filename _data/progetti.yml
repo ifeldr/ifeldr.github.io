@@ -1,0 +1,30 @@
+# Progetti del sito.
+# Ogni voce compare come card nella pagina Progetti (/progetti/), dal più recente al più vecchio.
+# Il progetto con la data più recente compare anche nel banner in cima alla home:
+# per cambiare il banner basta aggiungere qui un nuovo progetto con la sua data.
+#
+# Campi:
+#   titolo, descrizione, url, icona (Font Awesome), data (AAAA-MM-GG)
+#   banner_titolo, banner_testo, pulsante: testi del banner in home (facoltativi:
+#     se mancano si usano titolo e descrizione)
+#   figura: file in _includes/progetti/ con l'illustrazione del banner (facoltativo)
+
+- titolo: Simulatore 3D
+  data: 2026-11-18
+  icona: fas fa-cube
+  url: https://ifeldr.github.io/simulatore-3d/it/
+  descrizione: Carica un file STL, 3MF o G-code e calcola peso, tempo e costo reale della stampa 3D.
+  banner_titolo: Il mio laboratorio di stampa 3D
+  banner_testo: "Progetti, prove e guide pratiche, uno strato alla volta. Nel simulatore puoi caricare un file STL, 3MF o G-code e vedere quanto costa davvero stamparlo: materiale, energia e usura della stampante."
+  pulsante: Calcola il costo
+  figura: figura-simulatore.html
+
+- titolo: Rack Designer
+  data: 2026-11-24
+  icona: fas fa-server
+  url: https://ifeldr.github.io/Rack-Designer/
+  descrizione: Progetta e verifica gli armadi di rete, genera le etichette e posiziona armadi, prese e access point sulla planimetria.
+  banner_titolo: "Nuovo progetto: Rack Designer"
+  banner_testo: "Allestisci gli armadi di rete con oltre 600 modelli di 31 marche, genera le etichette di armadi, pannelli e prese e posiziona armadi, access point e telecamere sulla planimetria. Tutto nel browser, senza installare nulla."
+  pulsante: Apri il Rack Designer
+  figura: figura-rack.html

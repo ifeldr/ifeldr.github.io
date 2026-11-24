@@ -1,24 +1,25 @@
-{%- comment -%} Presentazione in cima alla home. Testi modificabili qui. {%- endcomment -%}
+{%- comment -%}
+  Banner in cima alla home: mostra l'ultimo progetto inserito in _data/progetti.yml
+  (quello con la data più recente). Per cambiarlo basta aggiungere un progetto a quel file.
+{%- endcomment -%}
+{%- assign progetti = site.data.progetti | sort: 'data' -%}
+{%- assign ultimo = progetti | last -%}
 <section class="intro-home" aria-label="Presentazione">
   <div class="intro-home-testo">
-    <h1>Il mio laboratorio di stampa 3D</h1>
-    <p>Progetti, prove e guide pratiche, uno strato alla volta. Nel simulatore puoi caricare un file STL, 3MF o G-code e vedere quanto costa davvero stamparlo: materiale, energia e usura della stampante.</p>
+    <span class="intro-home-etichetta"><i class="{{ ultimo.icona }} me-1" aria-hidden="true"></i>Ultimo progetto · {{ ultimo.titolo }}</span>
+    <h1>{{ ultimo.banner_titolo | default: ultimo.titolo }}</h1>
+    <p>{{ ultimo.banner_testo | default: ultimo.descrizione }}</p>
     <div class="intro-home-azioni">
-      <a class="btn btn-primary" href="{{ site.simulatore_url }}"><i class="fas fa-cube me-2" aria-hidden="true"></i>Calcola il costo</a>
+      <a class="btn btn-primary" href="{{ ultimo.url }}"><i class="{{ ultimo.icona }} me-2" aria-hidden="true"></i>{{ ultimo.pulsante | default: 'Apri il progetto' }}</a>
+      {%- if progetti.size > 1 %}
+      <a class="btn btn-outline-secondary" href="{{ '/progetti/' | relative_url }}">Tutti i progetti</a>
+      {%- endif %}
       <a class="btn btn-outline-secondary" href="{{ '/chi-sono/' | relative_url }}">Chi sono</a>
     </div>
   </div>
-  <svg class="intro-home-figura" viewBox="0 0 200 200" aria-hidden="true">
-    <defs>
-      <clipPath id="intro-sagoma"><path d="M100 30 160 64v72l-60 34-60-34V64z"/></clipPath>
-      <pattern id="intro-strati" width="200" height="6" patternUnits="userSpaceOnUse"><rect width="200" height="3" fill="#000" opacity=".16"/></pattern>
-    </defs>
-    <g clip-path="url(#intro-sagoma)">
-      <path d="M100 30 160 64 100 98 40 64z" fill="#F4B400"/>
-      <path d="M40 64 100 98v72l-60-34z" fill="#C98F00"/>
-      <path d="M160 64 100 98v72l60-34z" fill="#A87700"/>
-      <rect width="200" height="200" fill="url(#intro-strati)"/>
-    </g>
-  </svg>
+  {%- if ultimo.figura %}
+    {%- capture figura %}progetti/{{ ultimo.figura }}{% endcapture %}
+    {% include {{ figura }} %}
+  {%- endif %}
 </section>
 <h2 class="intro-home-titolo">Ultimi articoli</h2>
