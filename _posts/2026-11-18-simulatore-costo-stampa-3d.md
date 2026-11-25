@@ -43,7 +43,7 @@ Con **Scarica Excel** ottieni un file con una riga per ogni modello, le impostaz
 
 ## In italiano e in inglese
 
-Il simulatore è disponibile in [italiano](https://ifeldr.github.io/simulatore-3d/it/) e in [inglese](https://ifeldr.github.io/simulatore-3d/en/): all'apertura sceglie la lingua del browser, e si può cambiare con il selettore IT | EN.
+Il simulatore è disponibile in [italiano](https://simulatore-3d.lorenzogarbi.it/it/) e in [inglese](https://simulatore-3d.lorenzogarbi.it/en/): all'apertura sceglie la lingua del browser, e si può cambiare con il selettore IT | EN.
 
 > Le stime partono da valori medi: tempo e peso reali dipendono dalle impostazioni dello slicer. Per il risultato più preciso carica direttamente il G-code o il 3MF già processato.
 {: .prompt-tip }
