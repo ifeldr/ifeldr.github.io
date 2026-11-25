@@ -52,7 +52,7 @@ Durante il sopralluogo la **modalità telefono** permette di segnare presa per p
 
 Chi usa già NetBox o Snipe-IT non deve ricopiare niente: il progetto si **sincronizza via API**. In NetBox vengono creati sito, location, armadi, tipi di dispositivo con le porte, dispositivi e cavi delle permutazioni; in Snipe-IT gli asset con seriale, modello e posizione. Prima di scrivere c'è sempre un'**anteprima** di cosa verrà creato o aggiornato, ed è possibile anche il contrario: importare un sito di NetBox come nuovo progetto.
 
-> Le chiamate partono dal browser, quindi i server devono essere raggiungibili in HTTPS e accettare richieste da `https://ifeldr.github.io` (CORS). I token restano solo nel browser e non finiscono mai nel progetto.
+> Le chiamate partono dal browser, quindi i server devono essere raggiungibili in HTTPS e accettare richieste da `https://design.lorenzogarbi.it` (CORS). I token restano solo nel browser e non finiscono mai nel progetto.
 {: .prompt-info }
 
 ## Qualche dettaglio
